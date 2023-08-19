@@ -1,0 +1,12 @@
+<!-- Images can display any drawable
+    from the skin you choose. -->
+
+<image style="icon-trash"/>
+
+<!-- Images cannot be parents, as they
+    have no way of appending children. -->
+
+<container height=128>
+    <image skin="default" style="button"
+        scaling="fill" />
+</container>

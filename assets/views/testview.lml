@@ -1,0 +1,13 @@
+<window title="@startmenu" titleAlighn="center" illParent="true" defaultUniformX="true" onShow="fadeIn"
+        useVisDefaults="true">
+<table id="testTable">
+    <row>
+        <verticalGroup>
+            <label>Static Title></label>
+            <textButton onChange="textButton" growX="true" padTop="3">Click Me!</textButton>
+
+            <label id="testLabel">Test Label</label>
+        </verticalGroup>
+    </row>
+</table>
+</window>

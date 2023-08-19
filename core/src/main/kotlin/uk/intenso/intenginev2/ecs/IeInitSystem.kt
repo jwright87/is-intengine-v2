@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.Texture
 object IeInitSystem {
 
     fun initialLoad() {
-        val T:Class<*> = AssetType.PNG.clazz()
-        IeAssetSystem.loadGet("images/kotlin-logo.png", Texture.class) as
+//        val T:Class<*> = AssetType.PNG.clazz()
+//        IeAssetSystem.loadGet("images/kotlin-logo.png", Texture.class) as Texture
     }
 }

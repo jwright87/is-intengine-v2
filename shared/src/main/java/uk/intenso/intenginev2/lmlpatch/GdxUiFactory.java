@@ -83,7 +83,7 @@ public class GdxUiFactory {
     public static LmlParser fullExampleParser() {
         VisUI.load();
         createCodeTextAreaStyle();
-        return VisLml.parser().i18nBundle(getDefaultI18nBundle()).preferences(getDefaultPreferences())
+        LmlParser parser =  VisLml.parser().i18nBundle(getDefaultI18nBundle()).preferences(getDefaultPreferences())
             .i18nBundle("custom", getCustomI18nBundle()).preferences("custom", getCustomPreferences())
             // {examples} argument will allow to iterate over Main#EXAMPLES array in LML templates:
             .argument("examples", EXAMPLES)
@@ -99,6 +99,8 @@ public class GdxUiFactory {
             .attribute(getCustomBlinkingLabelAttribute(), "blinkingTime") // Additional blinking label's attribute.
             // Preparing the parser:
             .build();
+
+        return parser;
     }
 
     private static void createCodeTextAreaStyle() {

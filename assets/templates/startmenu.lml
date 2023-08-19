@@ -1,0 +1,19 @@
+<window title="@startmenu" titleAlighn="center" illParent="true" defaultUniformX="true" onShow="fadeIn"
+        useVisDefaults="true">
+
+    <table grow="true" align="center">
+        <row>
+            <textButton onChange="newGame" toTitleTable="true" align="right" padRight="5"
+            padTop="-2">@newGame</textButton>
+        </row>
+        <row>
+            <textButton toTitleTable="true" align="right" padRight="5" padTop="-2">@loadGame</textButton>
+        </row>
+        <row>
+            <textButton toTitleTable="true" align="right" padRight="5" padTop="-2">@pptions</textButton>
+        </row>
+        <row>
+            <textButton toTitleTable="true" align="right" padRight="5" padTop="-2">@quitGame</textButton>
+        </row>
+    </table>
+</window>

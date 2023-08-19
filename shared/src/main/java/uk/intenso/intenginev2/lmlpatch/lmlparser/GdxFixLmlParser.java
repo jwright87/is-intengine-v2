@@ -7,28 +7,28 @@ import com.github.czyzby.lml.parser.LmlSyntax;
 import com.github.czyzby.lml.parser.LmlTemplateReader;
 import com.github.czyzby.lml.parser.impl.DefaultLmlParser;
 
-public class GdxFixParser extends DefaultLmlParser {
-    public GdxFixParser(LmlData data) {
+public class GdxFixLmlParser extends DefaultLmlParser {
+    public GdxFixLmlParser(LmlData data) {
         super(data);
     }
 
-    public GdxFixParser(LmlData data, LmlSyntax syntax) {
+    public GdxFixLmlParser(LmlData data, LmlSyntax syntax) {
         super(data, syntax);
     }
 
-    public GdxFixParser(LmlData data, LmlSyntax syntax, LmlTemplateReader templateReader) {
+    public GdxFixLmlParser(LmlData data, LmlSyntax syntax, LmlTemplateReader templateReader) {
         super(data, syntax, templateReader);
     }
 
-    public GdxFixParser(LmlData data, LmlSyntax syntax, LmlTemplateReader templateReader, LmlStyleSheet styleSheet) {
+    public GdxFixLmlParser(LmlData data, LmlSyntax syntax, LmlTemplateReader templateReader, LmlStyleSheet styleSheet) {
         super(data, syntax, templateReader, styleSheet);
     }
 
-    public GdxFixParser(LmlData data, LmlSyntax syntax, LmlTemplateReader templateReader, boolean strict) {
+    public GdxFixLmlParser(LmlData data, LmlSyntax syntax, LmlTemplateReader templateReader, boolean strict) {
         super(data, syntax, templateReader, strict);
     }
 
-    public GdxFixParser(LmlData data, LmlSyntax syntax, LmlTemplateReader templateReader, LmlStyleSheet styleSheet, boolean strict) {
+    public GdxFixLmlParser(LmlData data, LmlSyntax syntax, LmlTemplateReader templateReader, LmlStyleSheet styleSheet, boolean strict) {
         super(data, syntax, templateReader, styleSheet, strict);
     }
 
@@ -39,7 +39,7 @@ public class GdxFixParser extends DefaultLmlParser {
             return super.parseBoolean(rawLmlData);
         }catch (Error t) {
             Exceptions.ignore(t);
-            System.out.println("Errror: " +t.getMessage());
+            System.out.println("Error: " +t.getMessage());
             return false;
         }
     }
@@ -50,7 +50,7 @@ public class GdxFixParser extends DefaultLmlParser {
             return super.parseBoolean(rawLmlData);
         }catch (Error t) {
             Exceptions.ignore(t);
-            System.out.println("Errror: " +t.getMessage());
+            System.out.println("Error: " +t.getMessage());
             return false;
         }
     }

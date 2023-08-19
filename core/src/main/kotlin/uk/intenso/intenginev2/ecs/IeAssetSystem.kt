@@ -8,10 +8,10 @@ object IeAssetSystem {
 
     private val mgr = AssetManager()
 
-    fun load(assetPath: String?, assetClass: Class<*>?) {
-        mgr.load(assetPath, assetClass) // fileName with extension, sameName will use to get from manager
-        mgr.finishLoading() //or use update() inside render() method
-    }
+//    fun load(assetPath: String?, assetClass: Class<*>?) {
+//        mgr.load(assetPath, assetClass) // fileName with extension, sameName will use to get from manager
+//        mgr.finishLoading() //or use update() inside render() method
+//    }
 
     operator fun <T> get(name: String?, assetClass: Class<T>?): T {
         return mgr.get(name, assetClass)

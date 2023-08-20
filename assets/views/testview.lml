@@ -1,13 +1,15 @@
-<window title="@startmenu" titleAlighn="center" illParent="true" defaultUniformX="true" onShow="fadeIn"
+<window title="Start Menu" titleAlign="center" defaultUniformX="true" onShow="fadeIn"
         useVisDefaults="true">
-<table id="testTable">
-    <row>
-        <verticalGroup>
-            <label>Static Title></label>
-            <textButton onChange="textButton" growX="true" padTop="3">Click Me!</textButton>
+    <table id="testTable">
+        <:row>
+            <label>startmenu</label>
+        </:row>
 
+<!--        <:row>-->
+<!--            <textButton onChange="textButton" growX="true" padTop="3">Click Me!</textButton>-->
+<!--        </:row>-->
+        <:row>
             <label id="testLabel">Test Label</label>
-        </verticalGroup>
-    </row>
-</table>
+        </:row>
+    </table>
 </window>

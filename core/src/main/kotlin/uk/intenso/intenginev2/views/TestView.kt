@@ -1,4 +1,4 @@
-package uk.intenso.intenginev2.lmlviews
+package uk.intenso.intenginev2.views
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.scenes.scene2d.Stage

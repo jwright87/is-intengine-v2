@@ -1,15 +1,15 @@
 package uk.intenso.intenginev2.init
 
 import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.files.FileHandle
+import com.badlogic.gdx.utils.Logger
 import com.github.czyzby.kiwi.util.common.Exceptions
 import com.github.czyzby.lml.parser.LmlParser
-import com.github.czyzby.lml.parser.LmlView
 import com.github.czyzby.lml.parser.impl.AbstractLmlView
 import com.github.czyzby.lml.util.LmlApplicationListener
 import uk.intenso.intenginev2.lmlpatch.GdxUiFactory
 import uk.intenso.intenginev2.lmlpatch.lmlparser.GdxFixLmlParser
-import uk.intenso.intenginev2.lmlpatch.views.TestView
-import uk.intenso.intenginev2.lmlviews.TestView
+import uk.intenso.views.MainView
 
 
 /** An {@link ApplicationListener} implementation that manages a list of {@link AbstractLmlView LML views}. Forces the
@@ -28,31 +28,42 @@ import uk.intenso.intenginev2.lmlviews.TestView
  * What LibGDX {@link com.badlogic.gdx.Game Game} is to {@link com.badlogic.gdx.Screen Screen}, this class is the same
  * thing to {@link AbstractLmlView}. Except it adds much more functionalities.
  **/
-class IeLmlAppListener: LmlApplicationListener() {
+
+class IeLmlAppListener : LmlApplicationListener() {
+
+
+    private val log = Logger(IeLmlAppListener::class.java.name)
+
 
     private var view: AbstractLmlView? = null
 
 
+    override fun create() {
+        super.create()
+    }
+
 
     override fun createParser(): LmlParser {
+        log.info("Creating Parser")
         val parser: LmlParser = GdxUiFactory.fullExampleParser()
         GdxFixLmlParser(
             parser.data,
             parser.getSyntax()
         )
-        createView(parser,"testview")
-
+        createView(parser, "testview")
+        return parser
     }
 
-    private fun createView(parser: LmlParser,lmlFileName:String) {
+    private fun createView(parser: LmlParser, lmlFileName: String) {
+        log.info("Creating View")
         try {
-            val viewLmlPath = "views/$lmlFileName.lml")
-
-            view = parser.createView(MainView.class, Gdx.files.internal(viewLmlPath))
+            val viewLmlPath = "views/$lmlFileName.lml"
+            view = parser.createView(MainView::class.java, Gdx.files.internal(viewLmlPath))
+            setView(view)
         } catch (e: Throwable) {
             Exceptions.ignore(e)
             e.printStackTrace()
         }
-        Gdx.input.inputProcessor = view.getStage()
+        Gdx.input.inputProcessor = view?.stage
     }
 }

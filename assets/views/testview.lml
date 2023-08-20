@@ -1,15 +1,15 @@
 <window title="Start Menu" titleAlign="center" defaultUniformX="true" onShow="fadeIn"
         useVisDefaults="true">
-    <table id="testTable">
+    <table expand="true" width="900" height="400" oneColumn="true" grow="true" id="testTable" growY="true">
         <:row>
-            <label>startmenu</label>
+            <label height="75">startmenu</label>
+        </:row>
+        <:row>
+            <textButton height="75" onChange="switch" grow="true" padTop="1" row="true">Switch Case</textButton>
         </:row>
 
-<!--        <:row>-->
-<!--            <textButton onChange="textButton" growX="true" padTop="3">Click Me!</textButton>-->
-<!--        </:row>-->
         <:row>
-            <label id="testLabel">Test Label</label>
+            <label height="75" id="testLabel">Test Label</label>
         </:row>
     </table>
 </window>

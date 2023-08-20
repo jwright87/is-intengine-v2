@@ -1,7 +1,6 @@
 package uk.intenso.intenginev2.init
 
 import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.files.FileHandle
 import com.badlogic.gdx.utils.Logger
 import com.github.czyzby.kiwi.util.common.Exceptions
 import com.github.czyzby.lml.parser.LmlParser
@@ -10,6 +9,7 @@ import com.github.czyzby.lml.util.LmlApplicationListener
 import uk.intenso.intenginev2.lmlpatch.GdxUiFactory
 import uk.intenso.intenginev2.lmlpatch.lmlparser.GdxFixLmlParser
 import uk.intenso.views.MainView
+import uk.intenso.intenginev2.views.TestView
 
 
 /** An {@link ApplicationListener} implementation that manages a list of {@link AbstractLmlView LML views}. Forces the
@@ -57,8 +57,10 @@ class IeLmlAppListener : LmlApplicationListener() {
     private fun createView(parser: LmlParser, lmlFileName: String) {
         log.info("Creating View")
         try {
-            val viewLmlPath = "views/$lmlFileName.lml"
-            view = parser.createView(MainView::class.java, Gdx.files.internal(viewLmlPath))
+            val testViewPath = "views/testview.lml"
+            val mainViewPath = "views/mainview.lml"
+            view = parser.createView(TestView::class.java, Gdx.files.internal(testViewPath))
+//            view = parser.createView(MainView::class.java, Gdx.files.internal(mainViewPath))
             setView(view)
         } catch (e: Throwable) {
             Exceptions.ignore(e)

@@ -1,26 +1,24 @@
 package uk.intenso.intenginev2.views
 
 import com.badlogic.gdx.Gdx
+import com.badlogic.gdx.math.Interpolation
+import com.badlogic.gdx.scenes.scene2d.Action
 import com.badlogic.gdx.scenes.scene2d.Stage
+import com.badlogic.gdx.scenes.scene2d.actions.Actions
 import com.badlogic.gdx.scenes.scene2d.ui.Label
 import com.badlogic.gdx.scenes.scene2d.ui.Table
+import com.badlogic.gdx.scenes.scene2d.ui.TextButton
 import com.badlogic.gdx.utils.viewport.ScreenViewport
-import com.github.czyzby.lml.annotation.LmlActor
-import com.github.czyzby.lml.annotation.LmlAfter
-import com.github.czyzby.lml.annotation.LmlBefore
-import com.github.czyzby.lml.annotation.LmlInject
-import com.github.czyzby.lml.parser.LmlData
+import com.github.czyzby.lml.annotation.*
 import com.github.czyzby.lml.parser.LmlParser
+import com.github.czyzby.lml.parser.LmlView
 import com.github.czyzby.lml.parser.impl.AbstractLmlView
 import com.github.czyzby.lml.util.Lml
 import ktx.log.Logger
 import uk.intenso.intenginev2.lmlpatch.widgets.ButtonManager
-import com.github.czyzby.lml.parser.LmlView
+import java.util.*
 
-class TestView : AbstractLmlView,LmlView {
-
-    constructor(stage: Stage, lmlData: LmlData) : super(Stage(ScreenViewport())) {
-    }
+class TestView : AbstractLmlView(Stage(ScreenViewport())),LmlView {
 
     private val log = Logger(TestView::class.java.name)
 
@@ -48,6 +46,23 @@ class TestView : AbstractLmlView,LmlView {
         } catch (exception: java.lang.Exception) {
             onParsingError(exception)
         }
+    }
+
+    /* templates/examples/checkBox.lml */
+    /** @param button will have its text changed.
+     */
+    @LmlAction("switch")
+    fun switch(button: TextButton) {
+        if (button.isChecked) {
+            button.setText(button.text.toString().uppercase(Locale.getDefault()))
+        } else {
+            button.setText(button.text.toString().lowercase(Locale.getDefault()))
+        }
+    }
+    /* Reflected methods, available in LML views: */ /* templates/main.lml */
+    fun fadeIn(): Action {
+        // Used by main window just after view show.
+        return Actions.sequence(Actions.alpha(0f), Actions.fadeIn(0.5f, Interpolation.fade))
     }
 
     private fun onParsingError(exception: Exception) {

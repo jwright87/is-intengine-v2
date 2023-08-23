@@ -1,0 +1,398 @@
+
+ss_body_male.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+tanned
+  rotate: false
+  xy: 1, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+skeleton
+  rotate: false
+  xy: 1, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+tanned2
+  rotate: false
+  xy: 835, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+dark
+  rotate: false
+  xy: 1, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+darkelf2
+  rotate: false
+  xy: 835, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+orc
+  rotate: false
+  xy: 1669, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+darkelf
+  rotate: false
+  xy: 835, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+red_orc
+  rotate: false
+  xy: 1669, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 2503, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+dark2
+  rotate: false
+  xy: 1669, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+
+ss_body_male2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+nose/buttonnose_tanned
+  rotate: false
+  xy: 1, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/straightnose_light
+  rotate: false
+  xy: 1, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/bignose_tanned
+  rotate: false
+  xy: 835, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/bignose_dark
+  rotate: false
+  xy: 1, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/buttonnose_dark
+  rotate: false
+  xy: 835, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/buttonnose_darkelf
+  rotate: false
+  xy: 1669, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/bignose_dark2
+  rotate: false
+  xy: 835, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/straightnose_darkelf2
+  rotate: false
+  xy: 1669, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/straightnose_tanned
+  rotate: false
+  xy: 2503, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/buttonnose_light
+  rotate: false
+  xy: 1669, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/buttonnose_darkelf2
+  rotate: false
+  xy: 2503, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/straightnose_dark
+  rotate: false
+  xy: 3337, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/straightnose_dark2
+  rotate: false
+  xy: 2503, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/bignose_darkelf2
+  rotate: false
+  xy: 3337, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/straightnose_tanned2
+  rotate: false
+  xy: 4171, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/bignose_light
+  rotate: false
+  xy: 3337, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/buttonnose_dark2
+  rotate: false
+  xy: 4171, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/bignose_tanned2
+  rotate: false
+  xy: 5005, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/straightnose_darkelf
+  rotate: false
+  xy: 4171, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/buttonnose_tanned2
+  rotate: false
+  xy: 5005, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+nose/bignose_darkelf
+  rotate: false
+  xy: 5839, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+
+ss_body_male3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+eyes/green
+  rotate: false
+  xy: 1, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+eyes/orange
+  rotate: false
+  xy: 835, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+eyes/purple
+  rotate: false
+  xy: 1669, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+eyes/brown
+  rotate: false
+  xy: 2503, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+eyes/red
+  rotate: false
+  xy: 3337, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+eyes/casting_eyeglow_skeleton
+  rotate: false
+  xy: 4171, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+eyes/yellow
+  rotate: false
+  xy: 5005, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+eyes/blue
+  rotate: false
+  xy: 5839, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+eyes/gray
+  rotate: false
+  xy: 6673, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+
+ss_body_male4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ears/bigears_tanned2
+  rotate: false
+  xy: 1, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/elvenears_dark
+  rotate: false
+  xy: 1, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/elvenears_tanned2
+  rotate: false
+  xy: 835, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/elvenears_tanned
+  rotate: false
+  xy: 1, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/elvenears_darkelf2
+  rotate: false
+  xy: 835, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/bigears_light
+  rotate: false
+  xy: 1669, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/bigears_dark
+  rotate: false
+  xy: 835, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/bigears_tanned
+  rotate: false
+  xy: 1669, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/bigears_dark2
+  rotate: false
+  xy: 2503, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/bigears_darkelf
+  rotate: false
+  xy: 1669, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/bigears_darkelf2
+  rotate: false
+  xy: 2503, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/elvenears_dark2
+  rotate: false
+  xy: 3337, 2693
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/elvenears_light
+  rotate: false
+  xy: 2503, 1
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
+ears/elvenears_darkelf
+  rotate: false
+  xy: 3337, 1347
+  size: 832, 1344
+  orig: 832, 1344
+  offset: 0, 0
+  index: -1
